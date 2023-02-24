@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:padding="16dp"
+    android:id="@+id/list_item"
+    >
+
+
+    <ImageView
+        android:id="@+id/icon_list"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_alignLeft="@id/numbers_list"
+        android:src="@mipmap/teacher"
+        android:background="@color/icon_back"
+
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+    <ListView
+        android:id="@+id/numbers_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/primary_color"/>
+
+
+    <TextView
+        android:id="@+id/english_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        android:text="English Word"
+        />
+
+
+    <TextView
+        android:id="@+id/arabic_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+
+        android:text="Arabic Word"
+
+        />
+
+    </LinearLayout>
+
+</LinearLayout>
